@@ -117,11 +117,11 @@ Download as JSON, CSV or Excel, or connect to Make, Zapier or n8n.
 
 ## More tools by Serenido
 
-- [Bilibili Scraper](https://github.com/teegemspod/bilibili-scraper): videos, comments, danmaku and creators. No login.
-- [AliExpress Product Details Scraper](https://github.com/teegemspod/aliexpress-product-details-scraper): every variant with price and stock, shipping to 89 countries.
-- [AliExpress Search Scraper](https://github.com/teegemspod/aliexpress-search-scraper): price, discount and exact order count for any search.
-- [Australian Supermarket Prices: Coles, Woolworths and ALDI](https://github.com/teegemspod/coles-woolworths-aldi-scraper): Coles, Woolworths and ALDI in one run, with unit prices.
-- [Google Trends Scraper](https://github.com/teegemspod/google-trends-scraper): interest over time, rising queries, regions and Trending Now.
+- [Bilibili Scraper](https://github.com/serenido/bilibili-scraper): videos, comments, danmaku and creators. No login.
+- [AliExpress Product Details Scraper](https://github.com/serenido/aliexpress-product-details-scraper): every variant with price and stock, shipping to 89 countries.
+- [AliExpress Search Scraper](https://github.com/serenido/aliexpress-search-scraper): price, discount and exact order count for any search.
+- [Australian Supermarket Prices: Coles, Woolworths and ALDI](https://github.com/serenido/coles-woolworths-aldi-scraper): Coles, Woolworths and ALDI in one run, with unit prices.
+- [Google Trends Scraper](https://github.com/serenido/google-trends-scraper): interest over time, rising queries, regions and Trending Now.
 
 ## Support
 
