@@ -2,9 +2,9 @@
 
 Get Weibo posts, hot searches (微博热搜), comments and creator profiles as clean JSON. No login, no cookies.
 
-Runs in the cloud on Apify. No servers, no proxy setup, no code to maintain. **[Open it on Apify](https://apify.com/teegemspod/weibo-scraper)**
+Runs in the cloud on Apify. No servers, no proxy setup, no code to maintain. **[Open it on Apify](https://apify.com/serenido/weibo-scraper)**
 
-**Price:** $1 per 1,000 rows. No monthly fee. Apify's free plan gives $5 of usage every month, no credit card needed. [Current price](https://apify.com/teegemspod/weibo-scraper/pricing).
+**Price:** $1 per 1,000 rows. No monthly fee. Apify's free plan gives $5 of usage every month, no credit card needed. [Current price](https://apify.com/serenido/weibo-scraper/pricing).
 
 ## What you get
 
@@ -24,7 +24,7 @@ from apify_client import ApifyClient
 
 client = ApifyClient("YOUR_APIFY_TOKEN")
 
-run = client.actor("teegemspod/weibo-scraper").call(run_input={
+run = client.actor("serenido/weibo-scraper").call(run_input={
     "mode": "trending",
     "trendingList": "hot_searches",
     "maxResults": 50
@@ -45,7 +45,7 @@ import { ApifyClient } from "apify-client";
 
 const client = new ApifyClient({ token: process.env.APIFY_TOKEN });
 
-const run = await client.actor("teegemspod/weibo-scraper").call({
+const run = await client.actor("serenido/weibo-scraper").call({
     "mode": "trending",
     "trendingList": "hot_searches",
     "maxResults": 50
@@ -60,7 +60,7 @@ console.log(items);
 Runs the tool and returns the rows in one request. Good for runs under 5 minutes; for bigger runs use the Python or JavaScript example.
 
 ```bash
-curl -X POST "https://api.apify.com/v2/acts/teegemspod~weibo-scraper/run-sync-get-dataset-items?token=$APIFY_TOKEN" \
+curl -X POST "https://api.apify.com/v2/acts/serenido~weibo-scraper/run-sync-get-dataset-items?token=$APIFY_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{"mode": "trending", "trendingList": "hot_searches", "maxResults": 50}'
 ```
@@ -69,13 +69,13 @@ Get your token in [Apify Console > Settings > API & Integrations](https://consol
 
 ## Use it from AI apps (MCP)
 
-Any app that supports remote MCP servers (Claude, ChatGPT, Cursor, VS Code and others) can run this tool for you. Add this server URL: `https://mcp.apify.com?tools=teegemspod/weibo-scraper`. Your Apify account connects on first use. Example config for Cursor:
+Any app that supports remote MCP servers (Claude, ChatGPT, Cursor, VS Code and others) can run this tool for you. Add this server URL: `https://mcp.apify.com?tools=serenido/weibo-scraper`. Your Apify account connects on first use. Example config for Cursor:
 
 ```json
 {
   "mcpServers": {
     "apify": {
-      "url": "https://mcp.apify.com?tools=teegemspod/weibo-scraper"
+      "url": "https://mcp.apify.com?tools=serenido/weibo-scraper"
     }
   }
 }
@@ -91,7 +91,7 @@ Any app that supports remote MCP servers (Claude, ChatGPT, Cursor, VS Code and o
 }
 ```
 
-Other modes: `search` (posts by keyword), `posts`, `comments`, `creators`. All options are listed on the [input page](https://apify.com/teegemspod/weibo-scraper/input-schema).
+Other modes: `search` (posts by keyword), `posts`, `comments`, `creators`. All options are listed on the [input page](https://apify.com/serenido/weibo-scraper/input-schema).
 
 ## Output example (one row)
 
@@ -125,6 +125,6 @@ Download as JSON, CSV or Excel, or connect to Make, Zapier or n8n.
 
 ## Support
 
-Found a bug or need a field? Open an issue here or on the [Issues tab on Apify](https://apify.com/teegemspod/weibo-scraper/issues).
+Found a bug or need a field? Open an issue here or on the [Issues tab on Apify](https://apify.com/serenido/weibo-scraper/issues).
 
 Use it only for public data and follow the website's terms and the laws that apply to you. This project is not affiliated with the websites it reads.

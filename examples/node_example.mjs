@@ -2,7 +2,7 @@ import { ApifyClient } from "apify-client";
 
 const client = new ApifyClient({ token: process.env.APIFY_TOKEN });
 
-const run = await client.actor("teegemspod/weibo-scraper").call({
+const run = await client.actor("serenido/weibo-scraper").call({
     "mode": "trending",
     "trendingList": "hot_searches",
     "maxResults": 50
