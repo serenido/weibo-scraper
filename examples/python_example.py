@@ -10,5 +10,5 @@ run = client.actor("serenido/weibo-scraper").call(run_input={
     "maxResults": 50
 })
 
-for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+for item in client.dataset(run.default_dataset_id).iterate_items():
     print(item)
